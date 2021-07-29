@@ -211,14 +211,14 @@ EndFunction
 Procedure AddDocumentScripts(Application, Description)
 	
 	// Find parent
-	CatalogFolder = Undefined;
-	If Not FindScenario(Application, "Документ", CatalogFolder) Then
+	ParentFolder = Undefined;
+	If Not FindScenario(Application, "Документ", ParentFolder) Then
 		Return;
 	EndIf;
 	
 	// Add folder
 	ParametersStructure = New Structure;
-	ParametersStructure.Insert("Parent", CatalogFolder);
+	ParametersStructure.Insert("Parent", ParentFolder);
 	ParametersStructure.Insert("ParentName", "Документ");
 	ParametersStructure.Insert("Description", Description);
 	ParametersStructure.Insert("Type", Enums.Scenarios.Folder);
@@ -290,7 +290,37 @@ EndProcedure
 &AtServerNoContext
 Procedure AddReportsScripts(Application, Description)
 	
+	// Find parent
+	ParentFolder = Undefined;
+	If Not FindScenario(Application, "Отчет", ParentFolder) Then
+		Return;
+	EndIf;
 	
+	// Add folder
+	ParametersStructure = New Structure;
+	ParametersStructure.Insert("Parent", ParentFolder);
+	ParametersStructure.Insert("ParentName", "Отчет");
+	ParametersStructure.Insert("Description", Description);
+	ParametersStructure.Insert("Type", Enums.Scenarios.Folder);
+	
+	Parent = Undefined;
+	AddScenarios(Application, ParametersStructure, Parent);
+	
+	If Not ValueIsFilled(Parent) Then
+		Return;
+	EndIf;
+	
+	// Add form
+	Script = GetObjectFormScript("Отчет", Description);
+	
+	ParametersStructure = New Structure;
+	ParametersStructure.Insert("Parent", Parent);
+	ParametersStructure.Insert("ParentName", "Отчет." + Description);
+	ParametersStructure.Insert("Description", "Форма");
+	ParametersStructure.Insert("Type", Enums.Scenarios.Scenario);
+	ParametersStructure.Insert("Script", Script);
+	
+	AddScenarios(Application, ParametersStructure);
 	
 EndProcedure
 
@@ -298,14 +328,14 @@ EndProcedure
 Procedure AddCatalogsScripts(Application, Description)
 	
 	// Find parent
-	CatalogFolder = Undefined;
-	If Not FindScenario(Application, "Справочник", CatalogFolder) Then
+	ParentFolder = Undefined;
+	If Not FindScenario(Application, "Справочник", ParentFolder) Then
 		Return;
 	EndIf;
 	
 	// Add folder
 	ParametersStructure = New Structure;
-	ParametersStructure.Insert("Parent", CatalogFolder);
+	ParametersStructure.Insert("Parent", ParentFolder);
 	ParametersStructure.Insert("ParentName", "Справочник");
 	ParametersStructure.Insert("Description", Description);
 	ParametersStructure.Insert("Type", Enums.Scenarios.Folder);
