@@ -365,7 +365,7 @@
 //
 // ПризнакПредметаРасчета:
 //	commodity		- если Товар
-//	service			– если Услуга
+//	service			- если Услуга
 //	payment			- если Авансовый платеж
 //
 Функция ОтправитьВиртуальныйЧек(ВиртуальныйЧек, Соединение, ТипОперации, ОписаниеОшибок)
@@ -988,7 +988,7 @@
 	КонецЕсли;
 	
 	//{
-	//	"uuid": "2ea26f17–0884–4f08–b120–306fc096a58f",
+	//	"uuid": "2ea26f17-0884-4f08-b120-306fc096a58f",
 	//	"error": null,
 	//	"status": "done",
 	//	"payload": {
@@ -1004,8 +1004,8 @@
 	//	},
 	//	"timestamp": "12.04.2017 20:15:08",
 	//	"group_code": " MyCompany_MyShop",
-	//	"daemon_code": "prod–agent–1",
-	//	"device_code": "KSR13.00–1–11",
+	//	"daemon_code": "prod-agent-1",
+	//	"device_code": "KSR13.00-1-11",
 	//	"external_id": "TRF10601_1",
 	//	"callback_url": ""
 	//}
