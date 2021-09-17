@@ -304,7 +304,43 @@ EndProcedure
 &AtServerNoContext
 Procedure AddDataProcessorsScripts(Application, Description)
 	
+	// Add parent folder
+	ParametersStructure = New Structure;
+	ParametersStructure.Insert("Description", "Обработка");
+	ParametersStructure.Insert("Type", Enums.Scenarios.Folder);
 	
+	ParentFolder = Undefined;
+	AddScenarios(Application, ParametersStructure, ParentFolder);
+	
+	If Not ValueIsFilled(ParentFolder) Then
+		Return;
+	EndIf;
+	
+	// Add folder
+	ParametersStructure = New Structure;
+	ParametersStructure.Insert("Parent", ParentFolder);
+	ParametersStructure.Insert("ParentName", "Обработка");
+	ParametersStructure.Insert("Description", Description);
+	ParametersStructure.Insert("Type", Enums.Scenarios.Folder);
+	
+	Parent = Undefined;
+	AddScenarios(Application, ParametersStructure, Parent);
+	
+	If Not ValueIsFilled(Parent) Then
+		Return;
+	EndIf;
+	
+	// Add form
+	Script = GetObjectFormScript("Обработка", Description);
+	
+	ParametersStructure = New Structure;
+	ParametersStructure.Insert("Parent", Parent);
+	ParametersStructure.Insert("ParentName", "Обработка." + Description);
+	ParametersStructure.Insert("Description", "Форма");
+	ParametersStructure.Insert("Type", Enums.Scenarios.Scenario);
+	ParametersStructure.Insert("Script", Script);
+	
+	AddScenarios(Application, ParametersStructure);
 	
 EndProcedure
 
