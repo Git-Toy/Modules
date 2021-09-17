@@ -27,16 +27,31 @@ EndFunction
 &AtServerNoContext
 Function AddScenarios(Application, ParametersStructure, Scenario = Undefined)
 	
-	Description = ParametersStructure.Description;
-	ParentName = ParametersStructure.ParentName;
+	ParentName = Undefined;
+	If Not ParametersStructure.Property("ParentName", ParentName) Then
+		ParentName = "";
+	EndIf;
 	
-	Path = ParentName + "." + Description;
+	Parent = Undefined;
+	If Not ParametersStructure.Property("Parent", Parent) Then
+		If ValueIsFilled(ParentName) Then
+			FindScenario(Application, ParentName, Parent);
+		EndIf;
+	EndIf;
+	
+	Description = ParametersStructure.Description;
+	If ValueIsFilled(ParentName) Then
+		Path = ParentName + "." + Description;
+	Else
+		Path = Description;
+	EndIf;
+	
 	If FindScenario(Application, Path, Scenario) Then
 		Return False;
 	EndIf;
 	
 	ScenarioObject = Catalogs.Scenarios.CreateItem();
-	ScenarioObject.Parent = ParametersStructure.Parent;
+	ScenarioObject.Parent = Parent;
 	ScenarioObject.Description = Description;
 	ScenarioObject.Path = Path;
 	ScenarioObject.Application = Application;
@@ -210,9 +225,15 @@ EndFunction
 &AtServerNoContext
 Procedure AddDocumentScripts(Application, Description)
 	
-	// Find parent
+	// Add parent folder
+	ParametersStructure = New Structure;
+	ParametersStructure.Insert("Description", "Документ");
+	ParametersStructure.Insert("Type", Enums.Scenarios.Folder);
+	
 	ParentFolder = Undefined;
-	If Not FindScenario(Application, "Документ", ParentFolder) Then
+	AddScenarios(Application, ParametersStructure, ParentFolder);
+	
+	If Not ValueIsFilled(ParentFolder) Then
 		Return;
 	EndIf;
 	
@@ -290,9 +311,15 @@ EndProcedure
 &AtServerNoContext
 Procedure AddReportsScripts(Application, Description)
 	
-	// Find parent
+	// Add parent folder
+	ParametersStructure = New Structure;
+	ParametersStructure.Insert("Description", "Отчет");
+	ParametersStructure.Insert("Type", Enums.Scenarios.Folder);
+	
 	ParentFolder = Undefined;
-	If Not FindScenario(Application, "Отчет", ParentFolder) Then
+	AddScenarios(Application, ParametersStructure, ParentFolder);
+	
+	If Not ValueIsFilled(ParentFolder) Then
 		Return;
 	EndIf;
 	
@@ -327,9 +354,15 @@ EndProcedure
 &AtServerNoContext
 Procedure AddCatalogsScripts(Application, Description)
 	
-	// Find parent
+	// Add parent folder
+	ParametersStructure = New Structure;
+	ParametersStructure.Insert("Description", "Справочник");
+	ParametersStructure.Insert("Type", Enums.Scenarios.Folder);
+	
 	ParentFolder = Undefined;
-	If Not FindScenario(Application, "Справочник", ParentFolder) Then
+	AddScenarios(Application, ParametersStructure, ParentFolder);
+	
+	If Not ValueIsFilled(ParentFolder) Then
 		Return;
 	EndIf;
 	
