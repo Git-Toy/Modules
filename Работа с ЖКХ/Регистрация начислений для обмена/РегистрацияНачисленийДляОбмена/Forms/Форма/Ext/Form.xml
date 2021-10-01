@@ -119,6 +119,15 @@
 			<EnableStartDrag>true</EnableStartDrag>
 			<DataPath>СписокДокументов</DataPath>
 			<RowPictureDataPath>СписокДокументов.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Create</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>Post</ExcludedCommand>
+				<ExcludedCommand>SetDateInterval</ExcludedCommand>
+				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+				<ExcludedCommand>UndoPosting</ExcludedCommand>
+			</CommandSet>
 			<ViewStatusLocation>None</ViewStatusLocation>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -167,7 +176,7 @@
 			</Events>
 			<ChildItems>
 				<PictureField name="СписокДокументовПометка" id="76">
-					<DataPath>~СписокДокументов.Пометка</DataPath>
+					<DataPath>СписокДокументов.Пометка</DataPath>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -183,18 +192,18 @@
 					<ExtendedTooltip name="СписокДокументовПометкаРасширеннаяПодсказка" id="78"/>
 				</PictureField>
 				<LabelField name="СписокДокументовДата" id="14">
-					<DataPath>~СписокДокументов.Дата</DataPath>
+					<DataPath>СписокДокументов.Дата</DataPath>
 					<Width>12</Width>
 					<ContextMenu name="СписокДокументовДатаКонтекстноеМеню" id="15"/>
 					<ExtendedTooltip name="СписокДокументовДатаРасширеннаяПодсказка" id="16"/>
 				</LabelField>
 				<LabelField name="СписокДокументовНомер" id="17">
-					<DataPath>~СписокДокументов.Номер</DataPath>
+					<DataPath>СписокДокументов.Номер</DataPath>
 					<ContextMenu name="СписокДокументовНомерКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="СписокДокументовНомерРасширеннаяПодсказка" id="19"/>
 				</LabelField>
 				<LabelField name="СписокДокументовДокумент" id="64">
-					<DataPath>~СписокДокументов.Документ</DataPath>
+					<DataPath>СписокДокументов.Документ</DataPath>
 					<Visible>false</Visible>
 					<Title>
 						<v8:item>
@@ -206,22 +215,22 @@
 					<ExtendedTooltip name="СписокДокументовДокументРасширеннаяПодсказка" id="66"/>
 				</LabelField>
 				<LabelField name="СписокДокументовВидОперации" id="20">
-					<DataPath>~СписокДокументов.ВидОперации</DataPath>
+					<DataPath>СписокДокументов.ВидОперации</DataPath>
 					<ContextMenu name="СписокДокументовВидОперацииКонтекстноеМеню" id="21"/>
 					<ExtendedTooltip name="СписокДокументовВидОперацииРасширеннаяПодсказка" id="22"/>
 				</LabelField>
 				<LabelField name="СписокДокументовОрганизация" id="23">
-					<DataPath>~СписокДокументов.Организация</DataPath>
+					<DataPath>СписокДокументов.Организация</DataPath>
 					<ContextMenu name="СписокДокументовОрганизацияКонтекстноеМеню" id="24"/>
 					<ExtendedTooltip name="СписокДокументовОрганизацияРасширеннаяПодсказка" id="25"/>
 				</LabelField>
 				<LabelField name="СписокДокументовЗдание" id="102">
-					<DataPath>~СписокДокументов.Здание</DataPath>
+					<DataPath>СписокДокументов.Здание</DataPath>
 					<ContextMenu name="СписокДокументовЗданиеКонтекстноеМеню" id="103"/>
 					<ExtendedTooltip name="СписокДокументовЗданиеРасширеннаяПодсказка" id="104"/>
 				</LabelField>
 				<LabelField name="СписокДокументовСуммаДокумента" id="38">
-					<DataPath>~СписокДокументов.СуммаДокумента</DataPath>
+					<DataPath>СписокДокументов.СуммаДокумента</DataPath>
 					<ContextMenu name="СписокДокументовСуммаДокументаКонтекстноеМеню" id="39"/>
 					<ExtendedTooltip name="СписокДокументовСуммаДокументаРасширеннаяПодсказка" id="40"/>
 				</LabelField>
@@ -261,7 +270,7 @@
 	ЛОЖЬ КАК Пометка
 ИЗ
 	Документ.КУ_НачислениеКоммунальныхУслуг КАК КУ_НачислениеКоммунальныхУслуг</QueryText>
-				<MainTable>1:99337a84-e8c8-489c-82df-bdd53a792d21</MainTable>
+				<MainTable>Document.КУ_НачислениеКоммунальныхУслуг</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -314,11 +323,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+						<v8:Type>cfg:DocumentRef.КУ_НачислениеКоммунальныхУслуг</v8:Type>
 					</Type>
 				</Column>
 				<Column name="Пометка" id="2">
@@ -353,11 +358,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>cfg:CatalogRef.КУ_ЖилыеЗдания</v8:Type>
 			</Type>
 			<Save>
 				<Field>Здание</Field>
