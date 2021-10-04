@@ -177,6 +177,12 @@
 			<ChildItems>
 				<PictureField name="СписокДокументовПометка" id="76">
 					<DataPath>СписокДокументов.Пометка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выгружать</v8:content>
+						</v8:item>
+					</Title>
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
