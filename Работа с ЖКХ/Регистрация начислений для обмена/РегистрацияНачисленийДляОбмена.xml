@@ -6,21 +6,21 @@
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
 				<xr:ObjectId>47ac3ad1-d83c-459c-9b53-d6579b57d9c2</xr:ObjectId>
 			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalDataProcessorObject.РегистрацияДокументовДляОбмена" category="Object">
+			<xr:GeneratedType name="ExternalDataProcessorObject.РегистрацияНачисленийДляОбмена" category="Object">
 				<xr:TypeId>644e8e34-6d1e-46d0-9253-b35d57d79ab0</xr:TypeId>
 				<xr:ValueId>e3faa652-dc12-4936-b4f4-6ede5edeb8e2</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>РегистрацияДокументовДляОбмена</Name>
+			<Name>РегистрацияНачисленийДляОбмена</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Регистрация документов для обмена</v8:content>
+					<v8:content>Регистрация начислений для обмена</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<DefaultForm>ExternalDataProcessor.РегистрацияДокументовДляОбмена.Form.Форма</DefaultForm>
+			<DefaultForm>ExternalDataProcessor.РегистрацияНачисленийДляОбмена.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>

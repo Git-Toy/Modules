@@ -240,7 +240,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:ExternalDataProcessorObject.РегистрацияДокументовДляОбмена</v8:Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.РегистрацияНачисленийДляОбмена</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
