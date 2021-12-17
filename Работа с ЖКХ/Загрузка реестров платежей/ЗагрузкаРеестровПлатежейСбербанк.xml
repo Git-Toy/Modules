@@ -20,7 +20,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<DefaultForm>ExternalDataProcessor.ЗагрузкаРеестровПлатежейСбербанка.Form.ФормаУпр</DefaultForm>
+			<DefaultForm>ExternalDataProcessor.ЗагрузкаРеестровПлатежейСбербанка.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>
@@ -539,7 +539,7 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаУпр</Form>
+			<Form>Форма</Form>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>
