@@ -225,6 +225,9 @@
 					<v8:DateFractions>Date</v8:DateFractions>
 				</v8:DateQualifiers>
 			</Type>
+			<Save>
+				<Field>ДатаНовая</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="ИмяФайлаЗагрузки" id="3">
 			<Title>
@@ -240,6 +243,9 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+			<Save>
+				<Field>ИмяФайлаЗагрузки</Field>
+			</Save>
 		</Attribute>
 	</Attributes>
 	<Commands>
