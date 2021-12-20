@@ -25,21 +25,15 @@
 			<ContextMenu name="БанковскийСчетКонтекстноеМеню" id="48"/>
 			<ExtendedTooltip name="БанковскийСчетРасширеннаяПодсказка" id="49"/>
 		</InputField>
-		<InputField name="ПутьКФайлу" id="1">
-			<DataPath>Объект.путьКФайлуЗагрузки</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Путь к файлу загрузки</v8:content>
-				</v8:item>
-			</Title>
+		<InputField name="ИмяФайлаЗагрузки" id="1">
+			<DataPath>ИмяФайлаЗагрузки</DataPath>
 			<ChoiceButton>true</ChoiceButton>
 			<OpenButton>true</OpenButton>
-			<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ПутьКФайлуРасширеннаяПодсказка" id="3"/>
+			<ContextMenu name="ИмяФайлаЗагрузкиКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИмяФайлаЗагрузкиРасширеннаяПодсказка" id="3"/>
 			<Events>
-				<Event name="StartChoice">ПутьКФайлуНачалоВыбора</Event>
-				<Event name="Opening">ПутьКФайлуОткрытие</Event>
+				<Event name="StartChoice">ИмяФайлаЗагрузкиНачалоВыбора</Event>
+				<Event name="Opening">ИмяФайлаЗагрузкиОткрытие</Event>
 			</Events>
 		</InputField>
 		<UsualGroup name="ГруппаПроставитьДату" id="64">
@@ -213,9 +207,9 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Save>
+				<Field>1/0:5ee7c5d2-957c-44d3-9322-53cdf6d284f6</Field>
 				<Field>Объект.БанковскийСчет</Field>
 				<Field>Объект.Организация</Field>
-				<Field>Объект.путьКФайлуЗагрузки</Field>
 			</Save>
 		</Attribute>
 		<Attribute name="ДатаНовая" id="2">
@@ -230,6 +224,21 @@
 				<v8:DateQualifiers>
 					<v8:DateFractions>Date</v8:DateFractions>
 				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяФайлаЗагрузки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла загрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
