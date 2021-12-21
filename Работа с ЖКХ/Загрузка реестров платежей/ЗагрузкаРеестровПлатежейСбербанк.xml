@@ -100,21 +100,21 @@
 			</Attribute>
 			<TabularSection uuid="00438e6e-6d70-4844-b7a7-084d36ffa301">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаРеестровПлатежейСбербанка.ТабЗагрузки" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаРеестровПлатежейСбербанка.ТаблицаЗагрузки" category="TabularSection">
 						<xr:TypeId>9edc35b0-cfd6-4b28-8928-be48a9d95035</xr:TypeId>
 						<xr:ValueId>363c1034-3b1c-47c5-bb7a-5ad34d13df53</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаРеестровПлатежейСбербанка.ТабЗагрузки" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаРеестровПлатежейСбербанка.ТаблицаЗагрузки" category="TabularSectionRow">
 						<xr:TypeId>ba8deed9-481a-4525-9215-f1eeafa0f07b</xr:TypeId>
 						<xr:ValueId>6555c09e-9140-4222-95f6-81d02947cbc1</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>ТабЗагрузки</Name>
+					<Name>ТаблицаЗагрузки</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Таб загрузки</v8:content>
+							<v8:content>Таблица загрузки</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
