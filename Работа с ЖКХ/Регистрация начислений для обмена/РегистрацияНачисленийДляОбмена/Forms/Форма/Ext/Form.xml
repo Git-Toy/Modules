@@ -143,7 +143,30 @@
 			<AllowRootChoice>false</AllowRootChoice>
 			<UpdateOnDataChange>Auto</UpdateOnDataChange>
 			<ContextMenu name="СписокДокументовКонтекстноеМеню" id="2"/>
-			<AutoCommandBar name="СписокДокументовКоманднаяПанель" id="3"/>
+			<AutoCommandBar name="СписокДокументовКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="СписокДокументовСписокДокументовСнятьФлажки" id="105">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.СписокДокументовСнятьФлажки</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="СписокДокументовСписокДокументовСнятьФлажкиРасширеннаяПодсказка" id="106"/>
+					</Button>
+					<Button name="СписокДокументовСписокДокументовУстановитьФлажки" id="107">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.СписокДокументовУстановитьФлажки</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.CheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="СписокДокументовСписокДокументовУстановитьФлажкиРасширеннаяПодсказка" id="108"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
 			<ExtendedTooltip name="СписокДокументовРасширеннаяПодсказка" id="4"/>
 			<SearchStringAddition name="СписокДокументовСтрокаПоиска" id="5">
 				<AdditionSource>
@@ -339,6 +362,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыгрузитьДокументы</Action>
+		</Command>
+		<Command name="СписокДокументовСнятьФлажки" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов снять флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписокДокументовСнятьФлажки</Action>
+		</Command>
+		<Command name="СписокДокументовУстановитьФлажки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список документов установить флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СписокДокументовУстановитьФлажки</Action>
 		</Command>
 	</Commands>
 </Form>
