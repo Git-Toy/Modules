@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<CommandBarLocation>None</CommandBarLocation>
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Здание" id="38">
+			<DataPath>Здание</DataPath>
+			<ContextMenu name="ЗданиеКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="ЗданиеРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<InputField name="ФайлЗагрузки" id="1">
+			<DataPath>Отчет.ФайлЗагрузки</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ФайлЗагрузкиКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ФайлЗагрузкиРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="StartChoice">ФайлЗагрузкиНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ДатаРеестра" id="4">
+			<DataPath>Отчет.ДатаРеестра</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ContextMenu name="ДатаРеестраКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДатаРеестраРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<Table name="Реестр" id="7">
+			<Representation>List</Representation>
+			<Footer>true</Footer>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Отчет.Реестр</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РеестрКонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="РеестрКоманднаяПанель" id="9">
+				<ChildItems>
+					<Button name="Заполнить" id="29">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Заполнить</CommandName>
+						<ExtendedTooltip name="ЗаполнитьРасширеннаяПодсказка" id="30"/>
+					</Button>
+					<Button name="ВыгрузитьНовая" id="33">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыгрузитьНовая</CommandName>
+						<ExtendedTooltip name="ВыгрузитьНоваяРасширеннаяПодсказка" id="34"/>
+					</Button>
+					<Button name="Выгрузить" id="31">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Выгрузить</CommandName>
+						<Font height="7" kind="AutoFont"/>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выгрузить (старая 25.07.17)</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ВыгрузитьРасширеннаяПодсказка" id="32"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="РеестрРасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="РеестрСтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>Реестр</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РеестрСтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="РеестрСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РеестрСостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>Реестр</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РеестрСостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="РеестрСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РеестрУправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>Реестр</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РеестрУправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="РеестрУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="РеестрНомерСтроки" id="20">
+					<DataPath>Отчет.Реестр.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РеестрНомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="РеестрНомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="РеестрЛицевойСчет" id="23">
+					<DataPath>Отчет.Реестр.ЛицевойСчет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РеестрЛицевойСчетКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="РеестрЛицевойСчетРасширеннаяПодсказка" id="25"/>
+					<Events>
+						<Event name="OnChange">РеестрЛицевойСчетПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="РеестрЗадолженность" id="26">
+					<DataPath>Отчет.Реестр.Задолженность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<FooterDataPath>Отчет.Реестр.Задолженность</FooterDataPath>
+					<ContextMenu name="РеестрЗадолженностьКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="РеестрЗадолженностьРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="РеестрНомерЛицевогоСчета" id="35">
+					<DataPath>Отчет.Реестр.НомерЛицевогоСчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="РеестрНомерЛицевогоСчетаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="РеестрНомерЛицевогоСчетаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalReportObject.ВыгрузкаРеестровПлатежейСбербанка</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Save>
+				<Field>Отчет.ФайлЗагрузки</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="Здание" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Здание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.КУ_ЖилыеЗдания</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Заполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Выгрузить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выгрузить</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВыгрузитьНовая" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить (новая)</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить новая</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьНовая</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>
