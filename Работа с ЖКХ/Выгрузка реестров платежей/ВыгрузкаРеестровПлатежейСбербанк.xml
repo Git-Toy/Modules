@@ -20,7 +20,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<DefaultForm>ExternalReport.ВыгрузкаРеестровПлатежейСбербанка.Form.ФормаОтчета</DefaultForm>
+			<DefaultForm>ExternalReport.ВыгрузкаРеестровПлатежейСбербанка.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema/>
 			<DefaultSettingsForm/>
@@ -356,8 +356,7 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>Форма20</Form>
-			<Form>ФормаОтчета</Form>
+			<Form>Форма</Form>
 		</ChildObjects>
 	</ExternalReport>
 </MetaDataObject>
