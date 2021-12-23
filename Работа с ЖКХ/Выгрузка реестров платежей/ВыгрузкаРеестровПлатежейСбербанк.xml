@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
-	<ExternalReport uuid="0371f1d7-4221-4ee6-9123-c25068bb0434">
+	<ExternalDataProcessor uuid="a02d0255-f015-4171-b251-ad3f1bdaf060">
 		<InternalInfo>
 			<xr:ContainedObject>
-				<xr:ClassId>e41aff26-25cf-4bb6-b6c1-3f478a75f374</xr:ClassId>
-				<xr:ObjectId>bb8e52ce-fdd2-4ec7-acf3-1096459190c6</xr:ObjectId>
+				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
+				<xr:ObjectId>956831fc-8090-4911-b5ac-ccd086daafbb</xr:ObjectId>
 			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalReportObject.ВыгрузкаРеестровПлатежейСбербанка" category="Object">
-				<xr:TypeId>62b3fc9d-7a32-4cce-a17b-be7b309cb996</xr:TypeId>
-				<xr:ValueId>1288197b-5b69-4456-a813-204364a12cf4</xr:ValueId>
+			<xr:GeneratedType name="ExternalDataProcessorObject.ВыгрузкаРеестровПлатежейСбербанка" category="Object">
+				<xr:TypeId>f55d6716-aad3-4bbf-a404-4c39ed66f747</xr:TypeId>
+				<xr:ValueId>5a5ef925-d48a-433b-9564-0d08e9bf9faa</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
@@ -20,17 +20,11 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<DefaultForm>ExternalReport.ВыгрузкаРеестровПлатежейСбербанка.Form.Форма</DefaultForm>
+			<DefaultForm>ExternalDataProcessor.ВыгрузкаРеестровПлатежейСбербанка.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
-			<MainDataCompositionSchema/>
-			<DefaultSettingsForm/>
-			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
-			<VariantsStorage/>
-			<SettingsStorage/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="740170f6-86bb-4e9b-a981-beea7142fe32">
+			<Attribute uuid="7c2d54aa-e705-41e5-8069-2795253ba1c2">
 				<Properties>
 					<Name>ФайлЗагрузки</Name>
 					<Synonym>
@@ -68,7 +62,7 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="ab2f9346-30a0-47c6-9ac6-b3a4d4a01fe8">
+			<Attribute uuid="53839eee-7996-4eb7-9717-97a8f2ace3cb">
 				<Properties>
 					<Name>ДатаРеестра</Name>
 					<Synonym>
@@ -105,15 +99,15 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<TabularSection uuid="a5434aa3-dfd6-4b51-97f6-a16ee80902d4">
+			<TabularSection uuid="0630af52-3df8-4982-904a-ef0f2ff96a45">
 				<InternalInfo>
-					<xr:GeneratedType name="ReportTabularSection.ВыгрузкаРеестровПлатежейСбербанка.Реестр" category="TabularSection">
-						<xr:TypeId>b3632db0-c9af-4761-b3e4-3dcc73f60074</xr:TypeId>
-						<xr:ValueId>fef19681-5b92-4ea8-b2f2-28460264bb12</xr:ValueId>
+					<xr:GeneratedType name="DataProcessorTabularSection.ВыгрузкаРеестровПлатежейСбербанка.Реестр" category="TabularSection">
+						<xr:TypeId>2941a9cd-5eac-466e-a54b-8de4b7c18b04</xr:TypeId>
+						<xr:ValueId>3e102314-dddd-4447-bd9b-eea97fe18793</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="ReportTabularSectionRow.ВыгрузкаРеестровПлатежейСбербанка.Реестр" category="TabularSectionRow">
-						<xr:TypeId>f2b3889c-a58d-4ff7-8d83-af298e730fa0</xr:TypeId>
-						<xr:ValueId>460c27dc-b490-4f21-81f4-40e4c2f03bca</xr:ValueId>
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ВыгрузкаРеестровПлатежейСбербанка.Реестр" category="TabularSectionRow">
+						<xr:TypeId>21d2c295-6ea1-4ded-8fdc-c8769ce0da0e</xr:TypeId>
+						<xr:ValueId>721b9847-0e51-43df-b46b-6be369281cb8</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
@@ -157,7 +151,7 @@
 					</StandardAttributes>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="18ed0984-d647-4958-88e8-85ba17b025f0">
+					<Attribute uuid="3fc53674-439f-44f9-9784-e55b9d866c1e">
 						<Properties>
 							<Name>ЛицевойСчет</Name>
 							<Synonym>
@@ -193,7 +187,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="362ea38d-7283-429f-968b-a920e98fd5a9">
+					<Attribute uuid="ead6ec5f-8341-4c49-9881-6c0846638749">
 						<Properties>
 							<Name>Задолженность</Name>
 							<Synonym>
@@ -234,7 +228,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="c6773c28-45c8-42e7-b972-1a174cb69707">
+					<Attribute uuid="c1855ae9-7dce-453a-a97e-0094cfbb1b4c">
 						<Properties>
 							<Name>ЛицевойСчетНаименование</Name>
 							<Synonym>
@@ -274,7 +268,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="84320ca3-2288-47e9-bb30-0e443555eef9">
+					<Attribute uuid="3b5b4798-f143-43b8-9e28-0fc05de2955b">
 						<Properties>
 							<Name>ПомещениеНаименование</Name>
 							<Synonym>
@@ -314,7 +308,7 @@
 							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="532d6722-9be9-4eef-9403-dd1562d370cc">
+					<Attribute uuid="220ccb3f-8c84-48e7-b97b-9e21f4f95f0a">
 						<Properties>
 							<Name>НомерЛицевогоСчета</Name>
 							<Synonym>
@@ -358,5 +352,5 @@
 			</TabularSection>
 			<Form>Форма</Form>
 		</ChildObjects>
-	</ExternalReport>
+	</ExternalDataProcessor>
 </MetaDataObject>

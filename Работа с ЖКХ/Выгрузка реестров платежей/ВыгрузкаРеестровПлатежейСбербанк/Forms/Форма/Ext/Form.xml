@@ -2,9 +2,6 @@
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<CommandBarLocation>None</CommandBarLocation>
-	<ReportFormType>Main</ReportFormType>
-	<AutoShowState>Auto</AutoShowState>
-	<ReportResultViewMode>Auto</ReportResultViewMode>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
@@ -95,45 +92,47 @@
 				<ExtendedTooltip name="РеестрУправлениеПоискомРасширеннаяПодсказка" id="19"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<LabelField name="РеестрНомерСтроки" id="20">
+				<LabelField name="РеестрНомерСтроки" id="41">
 					<DataPath>Отчет.Реестр.LineNumber</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="РеестрНомерСтрокиКонтекстноеМеню" id="21"/>
-					<ExtendedTooltip name="РеестрНомерСтрокиРасширеннаяПодсказка" id="22"/>
+					<ContextMenu name="РеестрНомерСтрокиКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="РеестрНомерСтрокиРасширеннаяПодсказка" id="43"/>
 				</LabelField>
-				<InputField name="РеестрЛицевойСчет" id="23">
+				<InputField name="РеестрЛицевойСчет" id="44">
 					<DataPath>Отчет.Реестр.ЛицевойСчет</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="РеестрЛицевойСчетКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="РеестрЛицевойСчетРасширеннаяПодсказка" id="25"/>
-					<Events>
-						<Event name="OnChange">РеестрЛицевойСчетПриИзменении</Event>
-					</Events>
+					<ContextMenu name="РеестрЛицевойСчетКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="РеестрЛицевойСчетРасширеннаяПодсказка" id="46"/>
 				</InputField>
-				<InputField name="РеестрЗадолженность" id="26">
+				<InputField name="РеестрЗадолженность" id="47">
 					<DataPath>Отчет.Реестр.Задолженность</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<FooterDataPath>Отчет.Реестр.Задолженность</FooterDataPath>
-					<ContextMenu name="РеестрЗадолженностьКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="РеестрЗадолженностьРасширеннаяПодсказка" id="28"/>
+					<ContextMenu name="РеестрЗадолженностьКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="РеестрЗадолженностьРасширеннаяПодсказка" id="49"/>
 				</InputField>
-				<InputField name="РеестрНомерЛицевогоСчета" id="35">
+				<InputField name="РеестрНомерЛицевогоСчета" id="56">
 					<DataPath>Отчет.Реестр.НомерЛицевогоСчета</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="РеестрНомерЛицевогоСчетаКонтекстноеМеню" id="36"/>
-					<ExtendedTooltip name="РеестрНомерЛицевогоСчетаРасширеннаяПодсказка" id="37"/>
+					<ContextMenu name="РеестрНомерЛицевогоСчетаКонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="РеестрНомерЛицевогоСчетаРасширеннаяПодсказка" id="58"/>
 				</InputField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Отчет" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет</v8:content>
+				</v8:item>
+			</Title>
 			<Type>
-				<v8:Type>cfg:ExternalReportObject.ВыгрузкаРеестровПлатежейСбербанка</v8:Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ВыгрузкаРеестровПлатежейСбербанка</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Save>
-				<Field>Отчет.ФайлЗагрузки</Field>
+				<Field>1/0:740170f6-86bb-4e9b-a981-beea7142fe32</Field>
 			</Save>
 		</Attribute>
 		<Attribute name="Здание" id="2">
