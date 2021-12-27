@@ -14,14 +14,22 @@
 			<ContextMenu name="ЗданиеКонтекстноеМеню" id="39"/>
 			<ExtendedTooltip name="ЗданиеРасширеннаяПодсказка" id="40"/>
 		</InputField>
-		<InputField name="ФайлЗагрузки" id="1">
-			<DataPath>Объект.ФайлЗагрузки</DataPath>
+		<InputField name="ИмяФайлаВыгрузки" id="1">
+			<DataPath>ИмяФайлаВыгрузки</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл выгрузки</v8:content>
+				</v8:item>
+			</Title>
 			<EditMode>EnterOnInput</EditMode>
 			<ChoiceButton>true</ChoiceButton>
-			<ContextMenu name="ФайлЗагрузкиКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ФайлЗагрузкиРасширеннаяПодсказка" id="3"/>
+			<OpenButton>true</OpenButton>
+			<ContextMenu name="ИмяФайлаВыгрузкиКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ИмяФайлаВыгрузкиРасширеннаяПодсказка" id="3"/>
 			<Events>
-				<Event name="StartChoice">ФайлЗагрузкиНачалоВыбора</Event>
+				<Event name="StartChoice">ИмяФайлаВыгрузкиНачалоВыбора</Event>
+				<Event name="Opening">ИмяФайлаВыгрузкиОткрытие</Event>
 			</Events>
 		</InputField>
 		<InputField name="ДатаРеестра" id="4">
@@ -133,6 +141,24 @@
 			<Type>
 				<v8:Type>cfg:CatalogRef.КУ_ЖилыеЗдания</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="ИмяФайлаВыгрузки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла выгрузки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ИмяФайлаВыгрузки</Field>
+			</Save>
 		</Attribute>
 	</Attributes>
 	<Commands>
