@@ -52,18 +52,6 @@
 						<CommandName>Form.Command.ВыгрузитьНовая</CommandName>
 						<ExtendedTooltip name="ВыгрузитьНоваяРасширеннаяПодсказка" id="34"/>
 					</Button>
-					<Button name="Выгрузить" id="31">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.Выгрузить</CommandName>
-						<Font height="7" kind="AutoFont"/>
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Выгрузить (старая 25.07.17)</v8:content>
-							</v8:item>
-						</Title>
-						<ExtendedTooltip name="ВыгрузитьРасширеннаяПодсказка" id="32"/>
-					</Button>
 				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="РеестрРасширеннаяПодсказка" id="10"/>
@@ -162,22 +150,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Заполнить</Action>
-			<CurrentRowUse>DontUse</CurrentRowUse>
-		</Command>
-		<Command name="Выгрузить" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выгрузить</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выгрузить</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>Выгрузить</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ВыгрузитьНовая" id="3">
