@@ -25,6 +25,7 @@
 			<EditMode>EnterOnInput</EditMode>
 			<ChoiceButton>true</ChoiceButton>
 			<OpenButton>true</OpenButton>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
 			<ContextMenu name="ИмяФайлаВыгрузкиКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="ИмяФайлаВыгрузкиРасширеннаяПодсказка" id="3"/>
 			<Events>
@@ -57,7 +58,7 @@
 					</Button>
 					<Button name="ВыгрузитьНовая" id="33">
 						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ВыгрузитьНовая</CommandName>
+						<CommandName>Form.Command.Выгрузить</CommandName>
 						<ExtendedTooltip name="ВыгрузитьНоваяРасширеннаяПодсказка" id="34"/>
 					</Button>
 				</ChildItems>
@@ -144,6 +145,9 @@
 			<Type>
 				<v8:Type>cfg:CatalogRef.КУ_ЖилыеЗдания</v8:Type>
 			</Type>
+			<Save>
+				<Field>Здание</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="ИмяФайлаВыгрузки" id="3">
 			<Title>
@@ -195,20 +199,20 @@
 			<Action>Заполнить</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="ВыгрузитьНовая" id="3">
+		<Command name="Выгрузить" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выгрузить (новая)</v8:content>
+					<v8:content>Выгрузить</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выгрузить новая</v8:content>
+					<v8:content>Выгрузить</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ВыгрузитьНовая</Action>
+			<Action>Выгрузить</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
