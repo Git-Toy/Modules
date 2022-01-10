@@ -128,7 +128,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:ExternalDataProcessorObject.ВыгрузкаРеестровПлатежейСбербанка</v8:Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ВыгрузкаРеестровПлатежейСбербанк</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Save>

@@ -6,31 +6,31 @@
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
 				<xr:ObjectId>956831fc-8090-4911-b5ac-ccd086daafbb</xr:ObjectId>
 			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalDataProcessorObject.ВыгрузкаРеестровПлатежейСбербанка" category="Object">
+			<xr:GeneratedType name="ExternalDataProcessorObject.ВыгрузкаРеестровПлатежейСбербанк" category="Object">
 				<xr:TypeId>f55d6716-aad3-4bbf-a404-4c39ed66f747</xr:TypeId>
 				<xr:ValueId>5a5ef925-d48a-433b-9564-0d08e9bf9faa</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ВыгрузкаРеестровПлатежейСбербанка</Name>
+			<Name>ВыгрузкаРеестровПлатежейСбербанк</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выгрузка реестров платежей Сбербанка</v8:content>
+					<v8:content>Выгрузка реестров платежей Сбербанк</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<DefaultForm>ExternalDataProcessor.ВыгрузкаРеестровПлатежейСбербанка.Form.Форма</DefaultForm>
+			<DefaultForm>ExternalDataProcessor.ВыгрузкаРеестровПлатежейСбербанк.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>
 			<TabularSection uuid="0630af52-3df8-4982-904a-ef0f2ff96a45">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ВыгрузкаРеестровПлатежейСбербанка.Реестр" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ВыгрузкаРеестровПлатежейСбербанк.Реестр" category="TabularSection">
 						<xr:TypeId>2941a9cd-5eac-466e-a54b-8de4b7c18b04</xr:TypeId>
 						<xr:ValueId>3e102314-dddd-4447-bd9b-eea97fe18793</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ВыгрузкаРеестровПлатежейСбербанка.Реестр" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ВыгрузкаРеестровПлатежейСбербанк.Реестр" category="TabularSectionRow">
 						<xr:TypeId>21d2c295-6ea1-4ded-8fdc-c8769ce0da0e</xr:TypeId>
 						<xr:ValueId>721b9847-0e51-43df-b46b-6be369281cb8</xr:ValueId>
 					</xr:GeneratedType>
