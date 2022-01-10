@@ -27,6 +27,12 @@
 		</InputField>
 		<InputField name="ИмяФайлаЗагрузки" id="1">
 			<DataPath>ИмяФайлаЗагрузки</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл загрузки</v8:content>
+				</v8:item>
+			</Title>
 			<ChoiceButton>true</ChoiceButton>
 			<OpenButton>true</OpenButton>
 			<ContextMenu name="ИмяФайлаЗагрузкиКонтекстноеМеню" id="2"/>
@@ -203,7 +209,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:ExternalDataProcessorObject.ЗагрузкаРеестровПлатежейСбербанка</v8:Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.ЗагрузкаРеестровПлатежейСбербанк</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Save>

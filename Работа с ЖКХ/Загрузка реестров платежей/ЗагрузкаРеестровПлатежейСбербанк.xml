@@ -6,21 +6,21 @@
 				<xr:ClassId>c3831ec8-d8d5-4f93-8a22-f9bfae07327f</xr:ClassId>
 				<xr:ObjectId>f84aff01-18ef-4866-a5a8-d04fa4d0ee73</xr:ObjectId>
 			</xr:ContainedObject>
-			<xr:GeneratedType name="ExternalDataProcessorObject.ЗагрузкаРеестровПлатежейСбербанка" category="Object">
+			<xr:GeneratedType name="ExternalDataProcessorObject.ЗагрузкаРеестровПлатежейСбербанк" category="Object">
 				<xr:TypeId>25b0c79b-52d6-4494-ac7e-e762c3b94542</xr:TypeId>
 				<xr:ValueId>71f1f246-50b1-4660-8bce-c21ae4f7d57c</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ЗагрузкаРеестровПлатежейСбербанка</Name>
+			<Name>ЗагрузкаРеестровПлатежейСбербанк</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузка реестров платежей Сбербанка</v8:content>
+					<v8:content>Загрузка реестров платежей Сбербанк</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<DefaultForm>ExternalDataProcessor.ЗагрузкаРеестровПлатежейСбербанка.Form.Форма</DefaultForm>
+			<DefaultForm>ExternalDataProcessor.ЗагрузкаРеестровПлатежейСбербанк.Form.Форма</DefaultForm>
 			<AuxiliaryForm/>
 		</Properties>
 		<ChildObjects>
@@ -86,7 +86,7 @@
 					<ChoiceParameterLinks>
 						<xr:Link>
 							<xr:Name>Отбор.Владелец</xr:Name>
-							<xr:DataPath xsi:type="xs:string">ExternalDataProcessor.ЗагрузкаРеестровПлатежейСбербанка.Attribute.Организация</xr:DataPath>
+							<xr:DataPath xsi:type="xs:string">ExternalDataProcessor.ЗагрузкаРеестровПлатежейСбербанк.Attribute.Организация</xr:DataPath>
 							<xr:ValueChange>Clear</xr:ValueChange>
 						</xr:Link>
 					</ChoiceParameterLinks>
@@ -100,11 +100,11 @@
 			</Attribute>
 			<TabularSection uuid="00438e6e-6d70-4844-b7a7-084d36ffa301">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаРеестровПлатежейСбербанка.ТаблицаЗагрузки" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.ЗагрузкаРеестровПлатежейСбербанк.ТаблицаЗагрузки" category="TabularSection">
 						<xr:TypeId>9edc35b0-cfd6-4b28-8928-be48a9d95035</xr:TypeId>
 						<xr:ValueId>363c1034-3b1c-47c5-bb7a-5ad34d13df53</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаРеестровПлатежейСбербанка.ТаблицаЗагрузки" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.ЗагрузкаРеестровПлатежейСбербанк.ТаблицаЗагрузки" category="TabularSectionRow">
 						<xr:TypeId>ba8deed9-481a-4525-9215-f1eeafa0f07b</xr:TypeId>
 						<xr:ValueId>6555c09e-9140-4222-95f6-81d02947cbc1</xr:ValueId>
 					</xr:GeneratedType>
