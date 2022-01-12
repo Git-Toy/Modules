@@ -25,6 +25,7 @@
 		</Properties>
 		<ChildObjects>
 			<Form>Форма</Form>
+			<Template>Макет</Template>
 		</ChildObjects>
 	</ExternalDataProcessor>
 </MetaDataObject>
