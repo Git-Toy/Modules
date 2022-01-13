@@ -15,28 +15,45 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 	</Events>
 	<ChildItems>
+		<InputField name="Организация" id="20">
+			<DataPath>Организация</DataPath>
+			<ContextMenu name="ОрганизацияКонтекстноеМеню" id="21"/>
+			<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="22"/>
+		</InputField>
+		<InputField name="БанковскийСчет" id="23">
+			<DataPath>БанковскийСчет</DataPath>
+			<ChoiceParameterLinks>
+				<xr:Link>
+					<xr:Name>Отбор.Владелец</xr:Name>
+					<xr:DataPath xsi:type="xs:string">Организация</xr:DataPath>
+					<xr:ValueChange>Clear</xr:ValueChange>
+				</xr:Link>
+			</ChoiceParameterLinks>
+			<ContextMenu name="БанковскийСчетКонтекстноеМеню" id="24"/>
+			<ExtendedTooltip name="БанковскийСчетРасширеннаяПодсказка" id="25"/>
+		</InputField>
 		<InputField name="Здание" id="1">
 			<DataPath>Здание</DataPath>
 			<ContextMenu name="ЗданиеКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="ЗданиеРасширеннаяПодсказка" id="3"/>
 		</InputField>
-		<InputField name="ИмяФайлаВыгрузки" id="4">
-			<DataPath>ИмяФайлаВыгрузки</DataPath>
+		<InputField name="ИмяКаталогаВыгрузки" id="4">
+			<DataPath>ИмяКаталогаВыгрузки</DataPath>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Файл выгрузки</v8:content>
+					<v8:content>Каталог выгрузки</v8:content>
 				</v8:item>
 			</Title>
 			<EditMode>EnterOnInput</EditMode>
 			<ChoiceButton>true</ChoiceButton>
 			<OpenButton>true</OpenButton>
 			<AutoMarkIncomplete>true</AutoMarkIncomplete>
-			<ContextMenu name="ИмяФайлаВыгрузкиКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="ИмяФайлаВыгрузкиРасширеннаяПодсказка" id="6"/>
+			<ContextMenu name="ИмяКаталогаВыгрузкиКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ИмяКаталогаВыгрузкиРасширеннаяПодсказка" id="6"/>
 			<Events>
-				<Event name="StartChoice">ИмяФайлаВыгрузкиНачалоВыбора</Event>
-				<Event name="Opening">ИмяФайлаВыгрузкиОткрытие</Event>
+				<Event name="StartChoice">ИмяКаталогаВыгрузкиНачалоВыбора</Event>
+				<Event name="Opening">ИмяКаталогаВыгрузкиОткрытие</Event>
 			</Events>
 		</InputField>
 		<UsualGroup name="ГруппаДаты" id="18">
@@ -103,11 +120,11 @@
 				<Field>Здание</Field>
 			</Save>
 		</Attribute>
-		<Attribute name="ИмяФайлаВыгрузки" id="3">
+		<Attribute name="ИмяКаталогаВыгрузки" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Имя файла выгрузки</v8:content>
+					<v8:content>Имя каталога выгрузки</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -118,7 +135,7 @@
 				</v8:StringQualifiers>
 			</Type>
 			<Save>
-				<Field>ИмяФайлаВыгрузки</Field>
+				<Field>ИмяКаталогаВыгрузки</Field>
 			</Save>
 		</Attribute>
 		<Attribute name="ДатаРеестра" id="4">
@@ -159,6 +176,36 @@
 					<v8:DateFractions>Date</v8:DateFractions>
 				</v8:DateQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="Организация" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Организация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Организации</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>Организация</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="БанковскийСчет" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Банковский счет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.БанковскиеСчета</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+			<Save>
+				<Field>БанковскийСчет</Field>
+			</Save>
 		</Attribute>
 	</Attributes>
 	<Commands>
