@@ -102,18 +102,21 @@
 				<c>
 					<f>8</f>
 					<parameter>ФИОПлательщика</parameter>
+					<detailParameter>ЛицевойСчет</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>9</f>
 					<parameter>НомерЛицевогоСчета</parameter>
+					<detailParameter>ЛицевойСчет</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>10</f>
 					<parameter>СуммаЗадолженности</parameter>
+					<detailParameter>ЛицевойСчет</detailParameter>
 				</c>
 			</c>
 		</row>
@@ -132,18 +135,21 @@
 				<c>
 					<f>11</f>
 					<parameter>НаименованиеПоказателя</parameter>
+					<detailParameter>СсылкаПоказателя</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>12</f>
 					<parameter>ТипПоказателя</parameter>
+					<detailParameter>СсылкаПоказателя</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>13</f>
 					<parameter>ЗначениеПоказателя</parameter>
+					<detailParameter>СсылкаПоказателя</detailParameter>
 				</c>
 			</c>
 		</row>
