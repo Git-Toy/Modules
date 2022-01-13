@@ -59,13 +59,11 @@
 			<ChildItems>
 				<InputField name="ДатаРеестра" id="9">
 					<DataPath>ДатаРеестра</DataPath>
-					<Width>12</Width>
 					<ContextMenu name="ДатаРеестраКонтекстноеМеню" id="10"/>
 					<ExtendedTooltip name="ДатаРеестраРасширеннаяПодсказка" id="11"/>
 				</InputField>
 				<InputField name="ПериодОплаты" id="15">
 					<DataPath>ПериодОплаты</DataPath>
-					<Width>12</Width>
 					<EditFormat>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
