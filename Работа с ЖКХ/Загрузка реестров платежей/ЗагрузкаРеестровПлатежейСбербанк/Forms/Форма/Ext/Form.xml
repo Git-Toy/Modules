@@ -81,16 +81,36 @@
 			<ContextMenu name="ТаблицаЗагрузкиКонтекстноеМеню" id="5"/>
 			<AutoCommandBar name="ТаблицаЗагрузкиКоманднаяПанель" id="6">
 				<ChildItems>
-					<Button name="Заполнить" id="38">
+					<Button name="ТаблицаЗагрузкиСнятьФлажки" id="42">
 						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.Заполнить</CommandName>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.СнятьФлажки</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ТаблицаЗагрузкиСнятьФлажкиРасширеннаяПодсказка" id="43"/>
+					</Button>
+					<Button name="ТаблицаЗагрузкиУстановитьФлажки" id="69">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.УстановитьФлажки</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.CheckAll</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ТаблицаЗагрузкиУстановитьФлажкиРасширеннаяПодсказка" id="70"/>
+					</Button>
+					<Button name="ЗагрузитьРеестр" id="38">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗагрузитьРеестр</CommandName>
 						<Title>
 							<v8:item>
 								<v8:lang>ru</v8:lang>
-								<v8:content>Заполнить</v8:content>
+								<v8:content>Загрузить реестр</v8:content>
 							</v8:item>
 						</Title>
-						<ExtendedTooltip name="ЗаполнитьРасширеннаяПодсказка" id="39"/>
+						<ExtendedTooltip name="ЗагрузитьРеестрРасширеннаяПодсказка" id="39"/>
 					</Button>
 					<Button name="СоздатьДокументы" id="40">
 						<Type>CommandBarButton</Type>
@@ -102,17 +122,6 @@
 							</v8:item>
 						</Title>
 						<ExtendedTooltip name="СоздатьДокументыРасширеннаяПодсказка" id="41"/>
-					</Button>
-					<Button name="СнятьГалки" id="42">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.СнятьГалки</CommandName>
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Снять галки</v8:content>
-							</v8:item>
-						</Title>
-						<ExtendedTooltip name="СнятьГалкиРасширеннаяПодсказка" id="43"/>
 					</Button>
 				</ChildItems>
 			</AutoCommandBar>
@@ -148,6 +157,13 @@
 					<ContextMenu name="ТаблицаЗагрузкиНомерСтрокиКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="ТаблицаЗагрузкиНомерСтрокиРасширеннаяПодсказка" id="19"/>
 				</LabelField>
+				<CheckBoxField name="ТаблицаЗагрузкиЗагружать" id="35">
+					<DataPath>Объект.ТаблицаЗагрузки.Загружать</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТаблицаЗагрузкиЗагружатьКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТаблицаЗагрузкиЗагружатьРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
 				<InputField name="ТаблицаЗагрузкиДатаЗагрузки" id="66">
 					<DataPath>Объект.ТаблицаЗагрузки.ДатаЗагрузки</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -190,13 +206,6 @@
 					<ContextMenu name="ТаблицаЗагрузкиСуммаКонтекстноеМеню" id="33"/>
 					<ExtendedTooltip name="ТаблицаЗагрузкиСуммаРасширеннаяПодсказка" id="34"/>
 				</InputField>
-				<CheckBoxField name="ТаблицаЗагрузкиЗагружать" id="35">
-					<DataPath>Объект.ТаблицаЗагрузки.Загружать</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ТаблицаЗагрузкиЗагружатьКонтекстноеМеню" id="36"/>
-					<ExtendedTooltip name="ТаблицаЗагрузкиЗагружатьРасширеннаяПодсказка" id="37"/>
-				</CheckBoxField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -249,20 +258,20 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="Заполнить" id="1">
+		<Command name="ЗагрузитьРеестр" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить</v8:content>
+					<v8:content>Загрузить реестр</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Заполнить</v8:content>
+					<v8:content>Загрузить реестр</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Заполнить</Action>
+			<Action>ЗагрузитьРеестр</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="СоздатьДокументы" id="2">
@@ -281,20 +290,20 @@
 			<Action>СоздатьДокументы</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="СнятьГалки" id="3">
+		<Command name="СнятьФлажки" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Снять галки</v8:content>
+					<v8:content>Снять флажки</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Снять галки</v8:content>
+					<v8:content>Снять флажки</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>СнятьГалки</Action>
+			<Action>СнятьФлажки</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="УстановитьДатуЗагрузки" id="4">
@@ -311,6 +320,22 @@
 				</v8:item>
 			</ToolTip>
 			<Action>УстановитьДатуЗагрузки</Action>
+		</Command>
+		<Command name="УстановитьФлажки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить флажки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица загрузки снять флажки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьФлажки</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>
