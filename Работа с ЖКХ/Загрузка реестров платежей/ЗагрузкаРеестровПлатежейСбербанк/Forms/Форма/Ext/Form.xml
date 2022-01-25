@@ -59,15 +59,15 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПроставитьДатуРасширеннаяПодсказка" id="65"/>
 			<ChildItems>
-				<InputField name="Дата" id="61">
+				<InputField name="ДатаНовая" id="61">
 					<DataPath>ДатаНовая</DataPath>
-					<ContextMenu name="ДатаКонтекстноеМеню" id="62"/>
-					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="63"/>
+					<ContextMenu name="ДатаНоваяКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ДатаНоваяРасширеннаяПодсказка" id="63"/>
 				</InputField>
-				<Button name="Таблица1ПроставитьДату" id="59">
+				<Button name="УстановитьДатуЗагрузки" id="59">
 					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ПроставитьДату</CommandName>
-					<ExtendedTooltip name="Таблица1ПроставитьДатуРасширеннаяПодсказка" id="60"/>
+					<CommandName>Form.Command.УстановитьДатуЗагрузки</CommandName>
+					<ExtendedTooltip name="УстановитьДатуЗагрузкиРасширеннаяПодсказка" id="60"/>
 				</Button>
 			</ChildItems>
 		</UsualGroup>
@@ -148,17 +148,11 @@
 					<ContextMenu name="ТаблицаЗагрузкиНомерСтрокиКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="ТаблицаЗагрузкиНомерСтрокиРасширеннаяПодсказка" id="19"/>
 				</LabelField>
-				<InputField name="ТаблицаЗагрузкиДата" id="20">
-					<DataPath>Объект.ТаблицаЗагрузки.Дата</DataPath>
+				<InputField name="ТаблицаЗагрузкиДатаЗагрузки" id="66">
+					<DataPath>Объект.ТаблицаЗагрузки.ДатаЗагрузки</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ТаблицаЗагрузкиДатаКонтекстноеМеню" id="21"/>
-					<ExtendedTooltip name="ТаблицаЗагрузкиДатаРасширеннаяПодсказка" id="22"/>
-				</InputField>
-				<InputField name="ТаблицаЗагрузкиВремя" id="23">
-					<DataPath>Объект.ТаблицаЗагрузки.Время</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ТаблицаЗагрузкиВремяКонтекстноеМеню" id="24"/>
-					<ExtendedTooltip name="ТаблицаЗагрузкиВремяРасширеннаяПодсказка" id="25"/>
+					<ContextMenu name="ТаблицаЗагрузкиДатаЗагрузкиКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ТаблицаЗагрузкиДатаЗагрузкиРасширеннаяПодсказка" id="68"/>
 				</InputField>
 				<InputField name="ТаблицаЗагрузкиНомерЛС" id="50">
 					<DataPath>Объект.ТаблицаЗагрузки.НомерЛС</DataPath>
@@ -303,20 +297,20 @@
 			<Action>СнятьГалки</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="ПроставитьДату" id="4">
+		<Command name="УстановитьДатуЗагрузки" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Проставить дату</v8:content>
+					<v8:content>Установить дату загрузки</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Проставить дату</v8:content>
+					<v8:content>Установить дату загрузки</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ПроставитьДату</Action>
+			<Action>УстановитьДатуЗагрузки</Action>
 		</Command>
 	</Commands>
 </Form>
