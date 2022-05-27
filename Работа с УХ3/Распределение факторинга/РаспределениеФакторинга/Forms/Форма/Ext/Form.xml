@@ -29,7 +29,7 @@
 					</Events>
 				</InputField>
 				<CheckBoxField name="Флажок" id="291">
-					<DataPath>Объект.Флажок</DataPath>
+					<DataPath>Объект.ПоискПоКомментариям</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
