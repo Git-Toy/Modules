@@ -1287,59 +1287,6 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<TabularSection uuid="808d0f73-5fd5-46d9-8ae4-171f2cb264cd">
-				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.РаспределениеФакторинга.Документы" category="TabularSection">
-						<xr:TypeId>c0442486-fc07-4c8f-9b55-bd4ea1edc093</xr:TypeId>
-						<xr:ValueId>e916337a-71e6-4f2a-8d36-16d7b6fb1f2d</xr:ValueId>
-					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.РаспределениеФакторинга.Документы" category="TabularSectionRow">
-						<xr:TypeId>24ea6a57-7cab-4b4b-962d-14005849b4e9</xr:TypeId>
-						<xr:ValueId>7a123ef8-ee4f-482f-a72b-81389e3d3546</xr:ValueId>
-					</xr:GeneratedType>
-				</InternalInfo>
-				<Properties>
-					<Name>Документы</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Документы</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<ToolTip/>
-					<FillChecking>DontCheck</FillChecking>
-					<StandardAttributes>
-						<xr:StandardAttribute name="LineNumber">
-							<xr:LinkByType/>
-							<xr:FillChecking>DontCheck</xr:FillChecking>
-							<xr:MultiLine>false</xr:MultiLine>
-							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
-							<xr:CreateOnInput>Auto</xr:CreateOnInput>
-							<xr:MaxValue xsi:nil="true"/>
-							<xr:ToolTip/>
-							<xr:ExtendedEdit>false</xr:ExtendedEdit>
-							<xr:Format/>
-							<xr:ChoiceForm/>
-							<xr:QuickChoice>Auto</xr:QuickChoice>
-							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
-							<xr:EditFormat/>
-							<xr:PasswordMode>false</xr:PasswordMode>
-							<xr:DataHistory>Use</xr:DataHistory>
-							<xr:MarkNegatives>false</xr:MarkNegatives>
-							<xr:MinValue xsi:nil="true"/>
-							<xr:Synonym/>
-							<xr:Comment/>
-							<xr:FullTextSearch>Use</xr:FullTextSearch>
-							<xr:ChoiceParameterLinks/>
-							<xr:FillValue xsi:nil="true"/>
-							<xr:Mask/>
-							<xr:ChoiceParameters/>
-						</xr:StandardAttribute>
-					</StandardAttributes>
-				</Properties>
-				<ChildObjects/>
-			</TabularSection>
 			<Form>Форма</Form>
 			<Form>ФормаЗагрузкиСоответствия</Form>
 		</ChildObjects>
