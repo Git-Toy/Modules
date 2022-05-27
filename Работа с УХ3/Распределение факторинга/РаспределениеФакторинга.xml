@@ -167,21 +167,21 @@
 			</Attribute>
 			<TabularSection uuid="b17ef5bb-2cbb-4079-a0c3-d12649712d09">
 				<InternalInfo>
-					<xr:GeneratedType name="DataProcessorTabularSection.РаспределениеФакторинга.ТЧ" category="TabularSection">
+					<xr:GeneratedType name="DataProcessorTabularSection.РаспределениеФакторинга.ДокументыОплаты" category="TabularSection">
 						<xr:TypeId>64eb0594-bc52-4fe6-b934-8fb554ff1002</xr:TypeId>
 						<xr:ValueId>06a526f5-4b41-4844-88ee-5866c9b2d1d3</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DataProcessorTabularSectionRow.РаспределениеФакторинга.ТЧ" category="TabularSectionRow">
+					<xr:GeneratedType name="DataProcessorTabularSectionRow.РаспределениеФакторинга.ДокументыОплаты" category="TabularSectionRow">
 						<xr:TypeId>ea557199-3329-498b-ba58-9c174d8df597</xr:TypeId>
 						<xr:ValueId>ee8cf066-701a-4418-a932-c480160763a8</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>ТЧ</Name>
+					<Name>ДокументыОплаты</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ТЧ</v8:content>
+							<v8:content>Документы оплаты</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

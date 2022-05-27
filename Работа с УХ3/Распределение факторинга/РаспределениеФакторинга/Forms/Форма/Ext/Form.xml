@@ -131,7 +131,7 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<FileDragMode>AsFile</FileDragMode>
-							<DataPath>Объект.ТЧ</DataPath>
+							<DataPath>Объект.ДокументыОплаты</DataPath>
 							<CommandSet>
 								<ExcludedCommand>Add</ExcludedCommand>
 								<ExcludedCommand>Change</ExcludedCommand>
@@ -196,20 +196,20 @@
 							</SearchControlAddition>
 							<ChildItems>
 								<CheckBoxField name="ТЧВыбран" id="230">
-									<DataPath>Объект.ТЧ.Выбран</DataPath>
+									<DataPath>Объект.ДокументыОплаты.Выбран</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ТЧВыбранКонтекстноеМеню" id="231"/>
 									<ExtendedTooltip name="ТЧВыбранРасширеннаяПодсказка" id="232"/>
 								</CheckBoxField>
 								<InputField name="ТЧПоступлениеРС" id="233">
-									<DataPath>Объект.ТЧ.ПоступлениеРС</DataPath>
+									<DataPath>Объект.ДокументыОплаты.ПоступлениеРС</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТЧПоступлениеРСКонтекстноеМеню" id="234"/>
 									<ExtendedTooltip name="ТЧПоступлениеРСРасширеннаяПодсказка" id="235"/>
 								</InputField>
 								<InputField name="ТЧСумма" id="239">
-									<DataPath>Объект.ТЧ.Сумма</DataPath>
+									<DataPath>Объект.ДокументыОплаты.Сумма</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -221,7 +221,7 @@
 									<ExtendedTooltip name="ТЧСуммаРасширеннаяПодсказка" id="241"/>
 								</InputField>
 								<InputField name="ТЧПоступлениеРССуммаДокумента" id="242">
-									<DataPath>Объект.ТЧ.ПоступлениеРС.СуммаДокумента</DataPath>
+									<DataPath>Объект.ДокументыОплаты.ПоступлениеРС.СуммаДокумента</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -431,7 +431,7 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<FileDragMode>AsFile</FileDragMode>
-							<DataPath>Объект.ТЧ</DataPath>
+							<DataPath>Объект.ДокументыОплаты</DataPath>
 							<CommandSet>
 								<ExcludedCommand>Add</ExcludedCommand>
 								<ExcludedCommand>Change</ExcludedCommand>
@@ -496,20 +496,20 @@
 							</SearchControlAddition>
 							<ChildItems>
 								<CheckBoxField name="ТЧВыбран1" id="258">
-									<DataPath>Объект.ТЧ.Выбран</DataPath>
+									<DataPath>Объект.ДокументыОплаты.Выбран</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ТЧВыбран1КонтекстноеМеню" id="259"/>
 									<ExtendedTooltip name="ТЧВыбран1РасширеннаяПодсказка" id="260"/>
 								</CheckBoxField>
 								<InputField name="ТЧПоступлениеРС1" id="261">
-									<DataPath>Объект.ТЧ.ПоступлениеРС</DataPath>
+									<DataPath>Объект.ДокументыОплаты.ПоступлениеРС</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТЧПоступлениеРС1КонтекстноеМеню" id="262"/>
 									<ExtendedTooltip name="ТЧПоступлениеРС1РасширеннаяПодсказка" id="263"/>
 								</InputField>
 								<InputField name="ТЧСумма1" id="264">
-									<DataPath>Объект.ТЧ.Сумма</DataPath>
+									<DataPath>Объект.ДокументыОплаты.Сумма</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -521,7 +521,7 @@
 									<ExtendedTooltip name="ТЧСумма1РасширеннаяПодсказка" id="266"/>
 								</InputField>
 								<InputField name="ТЧПоступлениеРССуммаДокумента1" id="267">
-									<DataPath>Объект.ТЧ.ПоступлениеРС.СуммаДокумента</DataPath>
+									<DataPath>Объект.ДокументыОплаты.ПоступлениеРС.СуммаДокумента</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
