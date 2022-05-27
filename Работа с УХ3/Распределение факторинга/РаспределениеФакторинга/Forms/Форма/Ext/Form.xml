@@ -668,7 +668,9 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Save>
+				<Field>Объект.ВариантЗагрузки</Field>
 				<Field>Объект.Организация</Field>
+				<Field>Объект.ПоискПоКомментариям</Field>
 				<Field>Объект.Фактор</Field>
 			</Save>
 		</Attribute>
@@ -704,6 +706,9 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+			<Save>
+				<Field>ФайлОстатки</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="ТЧ" id="6">
 			<Title>
@@ -791,6 +796,28 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПлатежныеПозицииФинансирование</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПлатежныеПозицииФинансирование.ЕстьОшибки</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="Загрузить" id="1">
