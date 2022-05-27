@@ -95,7 +95,7 @@
 								<Button name="Загрузить1" id="119">
 									<Type>UsualButton</Type>
 									<Representation>PictureAndText</Representation>
-									<CommandName>Form.Command.Загрузить</CommandName>
+									<CommandName>Form.Command.ЗагрузитьФинансирование</CommandName>
 									<Picture>
 										<xr:Ref>CommonPicture.ЗагрузитьУХ</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -113,7 +113,7 @@
 						<Button name="Сохранить1" id="210">
 							<Type>UsualButton</Type>
 							<Representation>PictureAndText</Representation>
-							<CommandName>Form.Command.Сохранить</CommandName>
+							<CommandName>Form.Command.СохранитьФинансирование</CommandName>
 							<Picture>
 								<xr:Ref>CommonPicture.СохранитьСписок</xr:Ref>
 								<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -395,7 +395,7 @@
 								<Button name="Загрузить2" id="206">
 									<Type>UsualButton</Type>
 									<Representation>PictureAndText</Representation>
-									<CommandName>Form.Command.Загрузить2</CommandName>
+									<CommandName>Form.Command.ЗагрузитьОстатки</CommandName>
 									<Picture>
 										<xr:Ref>CommonPicture.ЗагрузитьУХ</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -413,7 +413,7 @@
 						<Button name="Сохранить2" id="212">
 							<Type>UsualButton</Type>
 							<Representation>PictureAndText</Representation>
-							<CommandName>Form.Command.Сохранить2</CommandName>
+							<CommandName>Form.Command.СохранитьОстатки</CommandName>
 							<Picture>
 								<xr:Ref>CommonPicture.СохранитьСписок</xr:Ref>
 								<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -820,68 +820,68 @@
 		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
-		<Command name="Загрузить" id="1">
+		<Command name="ЗагрузитьФинансирование" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить</v8:content>
+					<v8:content>Загрузить финансирование</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить</v8:content>
+					<v8:content>Загрузить финансирование</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Загрузить</Action>
+			<Action>ЗагрузитьФинансирование</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="Сохранить" id="2">
+		<Command name="СохранитьФинансирование" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сохранить</v8:content>
+					<v8:content>Сохранить финансирование</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сохранить</v8:content>
+					<v8:content>Сохранить финансирование</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Сохранить</Action>
+			<Action>СохранитьФинансирование</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="Загрузить2" id="3">
+		<Command name="ЗагрузитьОстатки" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить2</v8:content>
+					<v8:content>Загрузить остатки</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить2</v8:content>
+					<v8:content>Загрузить остатки</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Загрузить2</Action>
+			<Action>ЗагрузитьОстатки</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="Сохранить2" id="4">
+		<Command name="СохранитьОстатки" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сохранить2</v8:content>
+					<v8:content>Сохранить остатки</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Сохранить2</v8:content>
+					<v8:content>Сохранить остатки</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Сохранить2</Action>
+			<Action>СохранитьОстатки</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ВыбратьВсе" id="5">
