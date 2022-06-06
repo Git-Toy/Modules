@@ -773,16 +773,21 @@
 					</Attribute>
 					<Attribute uuid="2ad5b9c3-29fa-456f-8261-1584ef72841e">
 						<Properties>
-							<Name>ЕстьОшибки</Name>
+							<Name>СтатусЗагрузки</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Есть ошибки</v8:content>
+									<v8:content>Статус загрузки</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:boolean</v8:Type>
+								<v8:Type>xs:decimal</v8:Type>
+								<v8:NumberQualifiers>
+									<v8:Digits>1</v8:Digits>
+									<v8:FractionDigits>0</v8:FractionDigits>
+									<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+								</v8:NumberQualifiers>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
