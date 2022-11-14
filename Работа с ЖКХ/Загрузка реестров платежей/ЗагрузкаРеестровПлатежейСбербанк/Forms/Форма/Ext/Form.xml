@@ -171,11 +171,11 @@
 					<ContextMenu name="ТаблицаЗагрузкиНомерЛСКонтекстноеМеню" id="51"/>
 					<ExtendedTooltip name="ТаблицаЗагрузкиНомерЛСРасширеннаяПодсказка" id="52"/>
 				</InputField>
-				<InputField name="ТаблицаЗагрузкиЛС" id="53">
-					<DataPath>Объект.ТаблицаЗагрузки.ЛС</DataPath>
+				<InputField name="ТаблицаЗагрузкиЛицевойСчет" id="53">
+					<DataPath>Объект.ТаблицаЗагрузки.ЛицевойСчет</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ТаблицаЗагрузкиЛСКонтекстноеМеню" id="54"/>
-					<ExtendedTooltip name="ТаблицаЗагрузкиЛСРасширеннаяПодсказка" id="55"/>
+					<ContextMenu name="ТаблицаЗагрузкиЛицевойСчетКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ТаблицаЗагрузкиЛицевойСчетРасширеннаяПодсказка" id="55"/>
 				</InputField>
 				<InputField name="ТаблицаЗагрузкиФИО" id="26">
 					<DataPath>Объект.ТаблицаЗагрузки.ФИО</DataPath>

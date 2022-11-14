@@ -423,11 +423,11 @@
 					</Attribute>
 					<Attribute uuid="9b880604-4e50-467c-babd-387d2b3baf5c">
 						<Properties>
-							<Name>ЛС</Name>
+							<Name>ЛицевойСчет</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>ЛС</v8:content>
+									<v8:content>Лицевой счет</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
