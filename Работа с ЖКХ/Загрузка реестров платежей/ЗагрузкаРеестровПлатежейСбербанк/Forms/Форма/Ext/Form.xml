@@ -72,9 +72,17 @@
 			<EnableDrag>true</EnableDrag>
 			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>Объект.ТаблицаЗагрузки</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+			</CommandSet>
 			<RowFilter xsi:nil="true"/>
 			<ContextMenu name="ТаблицаЗагрузкиКонтекстноеМеню" id="5"/>
 			<AutoCommandBar name="ТаблицаЗагрузкиКоманднаяПанель" id="6">
+				<Autofill>false</Autofill>
 				<ChildItems>
 					<Button name="ТаблицаЗагрузкиСнятьФлажки" id="42">
 						<Type>CommandBarButton</Type>
@@ -145,6 +153,10 @@
 				<ContextMenu name="ТаблицаЗагрузкиУправлениеПоискомКонтекстноеМеню" id="15"/>
 				<ExtendedTooltip name="ТаблицаЗагрузкиУправлениеПоискомРасширеннаяПодсказка" id="16"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ТаблицаЗагрузкиПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ТаблицаЗагрузкиПередУдалением</Event>
+			</Events>
 			<ChildItems>
 				<LabelField name="ТаблицаЗагрузкиНомерСтроки" id="17">
 					<DataPath>Объект.ТаблицаЗагрузки.LineNumber</DataPath>
@@ -161,45 +173,58 @@
 				</CheckBoxField>
 				<InputField name="ТаблицаЗагрузкиДатаЗагрузки" id="66">
 					<DataPath>Объект.ТаблицаЗагрузки.ДатаЗагрузки</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицаЗагрузкиДатаЗагрузкиКонтекстноеМеню" id="67"/>
 					<ExtendedTooltip name="ТаблицаЗагрузкиДатаЗагрузкиРасширеннаяПодсказка" id="68"/>
 				</InputField>
 				<InputField name="ТаблицаЗагрузкиНомерЛС" id="50">
 					<DataPath>Объект.ТаблицаЗагрузки.НомерЛС</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицаЗагрузкиНомерЛСКонтекстноеМеню" id="51"/>
 					<ExtendedTooltip name="ТаблицаЗагрузкиНомерЛСРасширеннаяПодсказка" id="52"/>
 				</InputField>
 				<InputField name="ТаблицаЗагрузкиЛицевойСчет" id="53">
 					<DataPath>Объект.ТаблицаЗагрузки.ЛицевойСчет</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицаЗагрузкиЛицевойСчетКонтекстноеМеню" id="54"/>
 					<ExtendedTooltip name="ТаблицаЗагрузкиЛицевойСчетРасширеннаяПодсказка" id="55"/>
 				</InputField>
 				<InputField name="ТаблицаЗагрузкиФИО" id="26">
 					<DataPath>Объект.ТаблицаЗагрузки.ФИО</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицаЗагрузкиФИОКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="ТаблицаЗагрузкиФИОРасширеннаяПодсказка" id="28"/>
 				</InputField>
 				<InputField name="ТаблицаЗагрузкиКонтрагент" id="56">
 					<DataPath>Объект.ТаблицаЗагрузки.Контрагент</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицаЗагрузкиКонтрагентКонтекстноеМеню" id="57"/>
 					<ExtendedTooltip name="ТаблицаЗагрузкиКонтрагентРасширеннаяПодсказка" id="58"/>
 				</InputField>
 				<InputField name="ТаблицаЗагрузкиКомментарий" id="29">
 					<DataPath>Объект.ТаблицаЗагрузки.Комментарий</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицаЗагрузкиКомментарийКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ТаблицаЗагрузкиКомментарийРасширеннаяПодсказка" id="31"/>
 				</InputField>
 				<InputField name="ТаблицаЗагрузкиСумма" id="32">
 					<DataPath>Объект.ТаблицаЗагрузки.Сумма</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ТаблицаЗагрузкиСуммаКонтекстноеМеню" id="33"/>
 					<ExtendedTooltip name="ТаблицаЗагрузкиСуммаРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ТаблицаЗагрузкиДокументЗагрузки" id="71">
+					<DataPath>Объект.ТаблицаЗагрузки.ДокументЗагрузки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТаблицаЗагрузкиДокументЗагрузкиКонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ТаблицаЗагрузкиДокументЗагрузкиРасширеннаяПодсказка" id="73"/>
 				</InputField>
 			</ChildItems>
 		</Table>
