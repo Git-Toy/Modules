@@ -473,47 +473,55 @@ Procedure SaveScenario(Command)
 		Return;
 	EndIf;
 	
-	If StrFind(ScenarioName, ".") < 1 Then
-		ErrorTemplate = NStr("ru = 'Имя скрипта: ""%1"" имеет ошибочный формат'");
-		ErrorText = StrTemplate(ErrorTemplate, ScenarioName);
-		
-		Message = New UserMessage();
-		Message.Text = ErrorText;
-		Message.Message();
-		Return;
-	EndIf;
+	ArrayScenarioList = StrSplit(ScenarioList, Chars.LF);
+	UpperIndex = ArrayScenarioList.UBound();
 	
-	ArrayScenarioName = StrSplit(ScenarioName, ".");
-	TypeObject = ArrayScenarioName[0];
-	Description = ArrayScenarioName[1];
-	
-	If IsBlankString(Description) Then
-		ErrorTemplate = NStr("ru = 'Имя скрипта: ""%1"" имеет ошибочный формат'");
-		ErrorText = StrTemplate(ErrorTemplate, ScenarioName);
+	For CurentIndex = 0 To UpperIndex Do
+		ScenarioName = ArrayScenarioList[CurentIndex];
+		CurentLine = Format(CurentIndex + 1, "NG=0");
 		
-		Message = New UserMessage();
-		Message.Text = ErrorText;
-		Message.Message();
-		Return;
-	EndIf;
-	
-	If TypeObject = "Документ" Then
-		AddDocumentScripts(Application, Description);
-	ElsIf TypeObject = "Обработка" Then
-		AddDataProcessorsScripts(Application, Description);
-	ElsIf TypeObject = "Отчет" Then
-		AddReportsScripts(Application, Description);
-	ElsIf TypeObject = "Справочник" Then
-		AddCatalogsScripts(Application, Description);
-	Else
-		ErrorTemplate = NStr("ru = 'Указан недопустимый тип объекта: ""%1""'");
-		ErrorText = StrTemplate(ErrorTemplate, TypeObject);
+		If StrFind(ScenarioName, ".") < 1 Then
+			ErrorTemplate = NStr("ru = 'Ошибка в строке %1. Имя скрипта: ""%2"" имеет ошибочный формат'");
+			ErrorText = StrTemplate(ErrorTemplate, CurentLine, ScenarioName);
+			
+			Message = New UserMessage();
+			Message.Text = ErrorText;
+			Message.Message();
+			Return;
+		EndIf;
 		
-		Message = New UserMessage();
-		Message.Text = ErrorText;
-		Message.Message();
-		Return;
-	EndIf;
+		ArrayScenarioName = StrSplit(ScenarioName, ".");
+		TypeObject = ArrayScenarioName[0];
+		Description = ArrayScenarioName[1];
+		
+		If IsBlankString(Description) Then
+			ErrorTemplate = NStr("ru = 'Ошибка в строке %1. Имя скрипта: ""%2"" имеет ошибочный формат'");
+			ErrorText = StrTemplate(ErrorTemplate, CurentLine, ScenarioName);
+			
+			Message = New UserMessage();
+			Message.Text = ErrorText;
+			Message.Message();
+			Return;
+		EndIf;
+		
+		If TypeObject = "Документ" Then
+			AddDocumentScripts(Application, Description);
+		ElsIf TypeObject = "Обработка" Then
+			AddDataProcessorsScripts(Application, Description);
+		ElsIf TypeObject = "Отчет" Then
+			AddReportsScripts(Application, Description);
+		ElsIf TypeObject = "Справочник" Then
+			AddCatalogsScripts(Application, Description);
+		Else
+			ErrorTemplate = NStr("ru = 'Ошибка в строке %1. Указан недопустимый тип объекта: ""%2""'");
+			ErrorText = StrTemplate(ErrorTemplate, CurentLine, TypeObject);
+			
+			Message = New UserMessage();
+			Message.Text = ErrorText;
+			Message.Message();
+			Return;
+		EndIf;
+	EndDo;
 	
 	RepositoryFiles.Sync();
 	
